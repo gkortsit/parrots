@@ -107,6 +107,7 @@ body {
 #mid-section {
   height: 150vh;
   width: 100%;
+  overflow: hidden;
 }
 
 #mid-container {
@@ -209,6 +210,17 @@ body {
   right: 345px;
   z-index: -1;
   opacity: 0.1;
+}
+
+#mid-circle {
+  height: 800px;
+  width: 800px;
+  background-color: #238baa;
+  z-index: -1;
+  position: relative;
+  bottom: 730px;
+  border-radius: 100%;
+  left: 890px;
 }
 
 /* BOTTOM SECTION */

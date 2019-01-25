@@ -53,6 +53,16 @@ body {
   transform: rotate(45deg);
 }
 
+.cube4 {
+  position: relative;
+  top: 46.3%;
+  left: 84.4%;
+  height: 120px;
+  width: 120px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+}
+
 /* TOP SECTION */
 
 #top-section {
@@ -221,6 +231,18 @@ body {
   bottom: 730px;
   border-radius: 100%;
   left: 890px;
+}
+
+.flamingo-img-section {
+  position: relative;
+  bottom: 112.5%;
+  left: 51.8%;
+  width: 500px;
+  z-index: -1;
+}
+
+.flamingo-image {
+  width: 100%;
 }
 
 /* BOTTOM SECTION */

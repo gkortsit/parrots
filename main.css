@@ -1,9 +1,60 @@
+/* GLOBAL */
+
 body {
   margin: 0;
 
   /* 
 
   font-family: 'Rambla', sans-serif; */
+}
+
+.subheading {
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.subheading:before,
+.subheading:after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #fff;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-6px);
+}
+
+.cube1 {
+  position: relative;
+  top: 17%;
+  left: 7%;
+  height: 40px;
+  width: 40px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+}
+
+.cube2 {
+  position: relative;
+  top: 5%;
+  left: 53%;
+  height: 80px;
+  width: 80px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+}
+
+.cube3 {
+  position: relative;
+  top: 56%;
+  left: 80%;
+  height: 120px;
+  width: 120px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
 }
 
 /* TOP SECTION */
@@ -34,6 +85,10 @@ body {
   top: 40%;
 }
 
+.top-subheading {
+  color: white;
+}
+
 #top-banner-text {
   font-family: "Staatliches", cursive;
   line-height: 1.5;
@@ -43,57 +98,6 @@ body {
   text-align: center;
   width: 60%;
   margin-top: 0;
-}
-
-.top-subheading {
-  color: white;
-  text-align: center;
-  font-family: "Pacifico", cursive;
-  font-size: 18px;
-  margin-bottom: 0;
-  z-index: 1;
-}
-
-.top-subheading:before,
-.top-subheading:after {
-  display: inline-block;
-  content: "";
-  border-top: 2px solid #fff;
-  width: 4rem;
-  margin: 0 1rem;
-  transform: translateY(-1rem);
-  position: relative;
-  top: 32%;
-}
-
-#top-cube1 {
-  position: relative;
-  top: 17%;
-  left: 7%;
-  height: 40px;
-  width: 40px;
-  background-color: #50e3c2;
-  transform: rotate(45deg);
-}
-
-#top-cube2 {
-  position: relative;
-  top: 5%;
-  left: 53%;
-  height: 80px;
-  width: 80px;
-  background-color: #50e3c2;
-  transform: rotate(45deg);
-}
-
-#top-cube3 {
-  position: relative;
-  top: 56%;
-  left: 80%;
-  height: 120px;
-  width: 120px;
-  background-color: #50e3c2;
-  transform: rotate(45deg);
 }
 
 .mouse-scroll-off {
@@ -108,4 +112,97 @@ body {
 #mid-section {
   height: 100vh;
   width: 100%;
+}
+
+#mid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  position: relative;
+  left: 12%;
+  bottom: 5%;
+}
+
+.mid-subheading:before,
+.mid-subheading:after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid black;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-6px);
+}
+
+.mid-heading {
+  font-family: "Staatliches", cursive;
+  line-height: 1.5;
+  font-size: 24px;
+  font-weight: normal;
+  color: #238baa;
+  text-align: center;
+}
+
+.email-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+.email-input {
+  width: 90%;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #50e3c2;
+}
+
+.email-input::placeholder {
+  color: #50e3c2;
+  opacity: 1;
+  text-align: center;
+  font-family: "Rambla", sans-serif;
+  font-size: 14px;
+}
+
+.email-input:focus {
+  text-align: left;
+  border-color: #ff0089;
+  color: #ff0089;
+  font-family: "Rambla", sans-serif;
+  font-size: 14px;
+  box-shadow: 0 0 3px 0.5px #a3a3a3;
+}
+
+.email-input:focus::placeholder {
+  color: transparent;
+}
+
+.email-submit-btn {
+  width: 50%;
+  background: linear-gradient(
+    to right,
+    #238baa,
+    #099cb5,
+    #00adbd,
+    #00bdc2,
+    #23cec4,
+    #2dd2c1,
+    #38d6bd,
+    #44dab8,
+    #3ad3b0,
+    #30cda8,
+    #23c6a1,
+    #13c099
+  );
+
+  margin-top: 20px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid #238baa;
+  color: #fff;
+  font-family: "Staatliches", cursive;
 }

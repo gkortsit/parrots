@@ -30,7 +30,7 @@ body {
 .cube1 {
   position: relative;
   top: 17%;
-  left: 7%;
+  left: 6.5%;
   height: 40px;
   width: 40px;
   background-color: #50e3c2;
@@ -49,7 +49,7 @@ body {
 
 .cube3 {
   position: relative;
-  top: 56%;
+  top: 53.5%;
   left: 80%;
   height: 120px;
   width: 120px;
@@ -60,16 +60,15 @@ body {
 /* TOP SECTION */
 
 #top-section {
-  background: url("./assets/photo-1515619363794-e826f7de3487.jpeg") no-repeat
-    fixed;
-  background-position-y: 70%;
+  background: url("./assets/photo-1515619363794-e826f7de3487.jpeg") no-repeat;
+  background-position-y: 100%;
   background-size: cover;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
 }
 
 #blue-overlay {
-  height: 100vh;
+  height: 120vh;
   width: 100%;
   background-color: rgba(35, 139, 170, 0.3);
   position: absolute;
@@ -82,7 +81,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 40%;
+  top: 41%;
 }
 
 .top-subheading {
@@ -103,14 +102,14 @@ body {
 .mouse-scroll-off {
   width: 15px;
   position: relative;
-  top: 90%;
+  top: 92.6%;
   left: 48%;
 }
 
 /* MIDDLE SECTION */
 
 #mid-section {
-  height: 100vh;
+  height: 150vh;
   width: 100%;
 }
 
@@ -205,4 +204,18 @@ body {
   border: 1px solid #238baa;
   color: #fff;
   font-family: "Staatliches", cursive;
+}
+
+.vector-dec-shape {
+  position: relative;
+  right: 60%;
+  z-index: -1;
+}
+
+/* BOTTOM SECTION */
+
+#bot-section {
+  height: 100vh;
+  width: 100%;
+  background-color: blue;
 }

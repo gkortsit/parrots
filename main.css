@@ -305,6 +305,11 @@ body {
   bottom: 0%;
 }
 
+.dotted-pattern {
+  position: relative;
+  bottom: 150%;
+}
+
 /* BOTTOM SECTION */
 
 #bot-section {

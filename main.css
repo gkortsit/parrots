@@ -57,8 +57,30 @@ body {
 
 .cube4 {
   position: relative;
-  top: 46.3%;
-  left: 84.4%;
+  top: 10%;
+  left: 10%;
+  height: 40px;
+  width: 40px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.cube5 {
+  position: relative;
+  /* top: ; */
+  left: 53%;
+  height: 80px;
+  width: 80px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.cube6 {
+  position: relative;
+  top: 41.5%;
+  left: 82.3%;
   height: 120px;
   width: 120px;
   background-color: #50e3c2;
@@ -118,7 +140,7 @@ body {
 /* MIDDLE SECTION */
 
 #mid-section {
-  height: 150vh;
+  height: 140vh;
   width: 100%;
   overflow: hidden;
 }
@@ -128,14 +150,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 400px;
   position: relative;
-  left: 12%;
-  top: 50px;
+  left: 18%;
+  bottom: 7%;
 }
 
 .mid-subheading {
   color: #315a6b;
+  font-size: 14px;
 }
 
 .mid-subheading:before,
@@ -151,7 +174,7 @@ body {
 .mid-heading {
   font-family: "Staatliches", cursive;
   line-height: 1.5;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   color: #238baa;
   text-align: center;
@@ -195,7 +218,7 @@ body {
 }
 
 .email-submit-btn {
-  width: 50%;
+  width: 70%;
   background: linear-gradient(
     to right,
     #238baa,
@@ -221,10 +244,10 @@ body {
 }
 
 .vector-dec-shape {
-  width: 140%;
+  width: 160%;
   position: relative;
   bottom: 20px;
-  right: 345px;
+  right: 375px;
   z-index: -1;
   opacity: 0.1;
 }
@@ -233,18 +256,18 @@ body {
   height: 800px;
   width: 800px;
   background-color: #238baa;
-  z-index: -1;
+  z-index: -2;
   position: relative;
-  bottom: 730px;
+  bottom: 205%;
   border-radius: 100%;
-  left: 890px;
+  left: 72%;
 }
 
 .flamingo-img-section {
   position: relative;
-  bottom: 112.5%;
+  bottom: 107%;
   left: 51.8%;
-  width: 500px;
+  width: 35%;
 }
 
 .flamingo-image {
@@ -307,8 +330,8 @@ body {
 
 .dotted-pattern {
   position: relative;
-  bottom: 175%;
-  width: 60;
+  bottom: 166%;
+  width: 50%;
   z-index: -1;
   left: 49%;
 }
@@ -319,4 +342,6 @@ body {
   height: 120vh;
   width: 100%;
   background-color: blue;
+  position: relative;
+  bottom: 7em;
 }

@@ -307,7 +307,10 @@ body {
 
 .dotted-pattern {
   position: relative;
-  bottom: 150%;
+  bottom: 175%;
+  width: 60;
+  z-index: -1;
+  left: 49%;
 }
 
 /* BOTTOM SECTION */

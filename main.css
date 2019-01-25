@@ -6,6 +6,8 @@ body {
   font-family: 'Rambla', sans-serif; */
 }
 
+/* TOP SECTION */
+
 #top-section {
   background: url("./assets/photo-1515619363794-e826f7de3487.jpeg") no-repeat
     fixed;
@@ -65,7 +67,7 @@ body {
 }
 
 #top-cube1 {
-  position: absolute;
+  position: relative;
   top: 17%;
   left: 7%;
   height: 40px;
@@ -75,8 +77,8 @@ body {
 }
 
 #top-cube2 {
-  position: absolute;
-  top: 10%;
+  position: relative;
+  top: 5%;
   left: 53%;
   height: 80px;
   width: 80px;
@@ -85,11 +87,25 @@ body {
 }
 
 #top-cube3 {
-  position: absolute;
-  top: 74%;
-  right: 10%;
+  position: relative;
+  top: 56%;
+  left: 80%;
   height: 120px;
   width: 120px;
   background-color: #50e3c2;
   transform: rotate(45deg);
+}
+
+.mouse-scroll-off {
+  width: 15px;
+  position: relative;
+  top: 90%;
+  left: 48%;
+}
+
+/* MIDDLE SECTION */
+
+#mid-section {
+  height: 100vh;
+  width: 100%;
 }

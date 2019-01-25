@@ -8,22 +8,28 @@ body {
 
 #top-section {
   background: url("./assets/photo-1515619363794-e826f7de3487.jpeg") no-repeat
-    center center fixed;
+    fixed;
+  background-position-y: 70%;
   background-size: cover;
   height: 100vh;
   width: 100%;
 }
 
-#top-container {
+#blue-overlay {
   height: 100vh;
   width: 100%;
   background-color: rgba(35, 139, 170, 0.3);
   position: absolute;
   top: 0;
+}
+
+#top-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 40%;
 }
 
 #top-banner-text {
@@ -41,7 +47,49 @@ body {
   color: white;
   text-align: center;
   font-family: "Pacifico", cursive;
-  font-size: 24px;
-  font-weight: normal;
+  font-size: 18px;
   margin-bottom: 0;
+  z-index: 1;
+}
+
+.top-subheading:before,
+.top-subheading:after {
+  display: inline-block;
+  content: "";
+  border-top: 2px solid #fff;
+  width: 4rem;
+  margin: 0 1rem;
+  transform: translateY(-1rem);
+  position: relative;
+  top: 32%;
+}
+
+#top-cube1 {
+  position: absolute;
+  top: 17%;
+  left: 7%;
+  height: 40px;
+  width: 40px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+}
+
+#top-cube2 {
+  position: absolute;
+  top: 10%;
+  left: 53%;
+  height: 80px;
+  width: 80px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+}
+
+#top-cube3 {
+  position: absolute;
+  top: 74%;
+  right: 10%;
+  height: 120px;
+  width: 120px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
 }

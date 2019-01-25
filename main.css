@@ -10,7 +10,6 @@ body {
   font-size: 18px;
   font-weight: normal;
   margin-bottom: 0;
-  z-index: 1;
 }
 
 .subheading:before,
@@ -31,6 +30,7 @@ body {
   width: 40px;
   background-color: #50e3c2;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .cube2 {
@@ -41,6 +41,7 @@ body {
   width: 80px;
   background-color: #50e3c2;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .cube3 {
@@ -51,6 +52,7 @@ body {
   width: 120px;
   background-color: #50e3c2;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 .cube4 {
@@ -61,6 +63,7 @@ body {
   width: 120px;
   background-color: #50e3c2;
   transform: rotate(45deg);
+  z-index: 1;
 }
 
 /* TOP SECTION */
@@ -131,11 +134,15 @@ body {
   top: 50px;
 }
 
+.mid-subheading {
+  color: #315a6b;
+}
+
 .mid-subheading:before,
 .mid-subheading:after {
   display: inline-block;
   content: "";
-  border-top: 2px solid black;
+  border-top: 2px solid #315a6b;
   width: 4rem;
   margin: 0 1rem;
   transform: translateY(-6px);
@@ -238,11 +245,64 @@ body {
   bottom: 112.5%;
   left: 51.8%;
   width: 500px;
-  z-index: -1;
 }
 
 .flamingo-image {
   width: 100%;
+}
+
+.chevron-buttons-group {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 44.5%;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+}
+
+.chavron-btn {
+  color: white;
+  font-size: 26px;
+  background-color: #50e3c2;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.blue-line1 {
+  height: 100%;
+  width: 5px;
+  background-color: #238baa;
+  transform: translateX(16px);
+}
+
+.chavron-btn:hover > .blue-line1 {
+  background-color: #ff0089;
+}
+
+.blue-line2 {
+  height: 100%;
+  width: 5px;
+  background-color: #238baa;
+  transform: translateX(-16px);
+}
+
+.chavron-btn:hover > .blue-line2 {
+  background-color: #ff0089;
+}
+
+.white-box {
+  height: 150px;
+  width: 150px;
+  background-color: #fff;
+  z-index: 12;
+  position: absolute;
+  bottom: 0%;
 }
 
 /* BOTTOM SECTION */

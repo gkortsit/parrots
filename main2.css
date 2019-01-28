@@ -1,6 +1,5 @@
 html {
   height: 100%;
-  /* overflow: hidden; */
   overflow-x: hidden;
 }
 
@@ -21,12 +20,13 @@ body {
   grid-template-rows: 33vh 40vh 50vh;
   grid-template-columns: repeat(4, 1fr);
   z-index: -1;
+  position: relative;
 }
 
 .blue-overlay {
   position: absolute;
   top: 0;
-  height: 121.4vh;
+  height: 98.7%;
   width: 100%;
   background-color: rgba(35, 139, 170, 0.3);
   z-index: 0;
@@ -290,7 +290,7 @@ body {
   transform: rotate(45deg);
   z-index: 1;
   margin-top: -8.9%;
-  margin-left: 3.4%;
+  margin-left: 3.5%;
 }
 
 .cube6 {
@@ -303,10 +303,6 @@ body {
   position: relative;
   top: 14.2%;
   left: 14.2%;
-}
-
-.flamingo-img-section {
-  width: 30vw;
 }
 
 .chevron-buttons-group {
@@ -370,4 +366,94 @@ body {
   position: absolute;
   top: 42%;
   left: 42%;
+}
+
+/* BOTTOM SECTION */
+
+.bot-section {
+  height: 110vh;
+  display: flex;
+  background: url("./assets/photo-1546421568-2e7fbab04133.jpeg") bottom center;
+  background-size: cover;
+  position: relative;
+}
+
+.bot-left-side {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cube7 {
+  height: 40px;
+  width: 40px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+  z-index: 1;
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+
+.bot-text-container {
+  align-self: center;
+  align-self: flex-end;
+  width: 80%;
+  position: relative;
+  bottom: 10%;
+  left: 10%;
+  color: #fff;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.bot-header {
+  font-family: "Staatliches", cursive;
+  font-size: 4.5rem;
+  margin-bottom: 5%;
+}
+
+.bot-paragraph {
+  font-family: "Rambla", sans-serif;
+  font-size: 0.8rem;
+  width: 90%;
+  line-height: 1.5;
+}
+
+.bot-right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50vw;
+}
+
+.cube8 {
+  height: 80px;
+  width: 80px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+  z-index: 1;
+  margin-top: 10%;
+  margin-left: 10%;
+}
+
+.cube9 {
+  height: 130px;
+  width: 130px;
+  background-color: #50e3c2;
+  transform: rotate(45deg);
+  z-index: 1;
+  align-self: end;
+  margin-bottom: 13%;
+  margin-right: 17%;
+}
+
+.blue-overlay-2 {
+  position: absolute;
+  top: 0;
+  height: 110vh;
+  width: 100%;
+  background-color: rgba(35, 139, 170, 0.3);
+  z-index: 0;
 }

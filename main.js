@@ -1,3 +1,19 @@
+let i = 0;
+let headingText =
+  "this reserve enables the development of various species of endangered birds throughout south east asia";
+let speed = 50;
+let topBanner = document.getElementById("top-banner-text");
+
+function typewriteHeading() {
+  if (i < headingText.length) {
+    topBanner.textContent += headingText.charAt(i);
+    i++;
+    setTimeout(typewriteHeading, speed);
+  }
+}
+
+typewriteHeading();
+
 $(window).scroll(function() {
   if ($(window).scrollTop() > 150) {
     $(".cube4").addClass("cube4animation");

@@ -353,21 +353,11 @@ body {
   cursor: pointer;
   z-index: 1;
   background: linear-gradient(
-    to right,
-    #238baa,
-    #099cb5,
-    #00adbd,
-    #00bdc2,
-    #23cec4,
-    #2dd2c1,
-    #38d6bd,
-    #44dab8,
-    #3ad3b0,
-    #30cda8,
-    #23c6a1,
-    #13c099
+    90deg,
+    rgba(35, 139, 170, 1) 0%,
+    rgba(19, 192, 153, 1) 50%,
+    rgba(80, 227, 194, 1) 100%
   );
-
   margin-top: 30px;
   border-radius: 20px;
   padding: 10px;
@@ -379,6 +369,30 @@ body {
 .email-submit-btn:hover {
   border-color: #ff0089;
   box-shadow: 0 0 3px 0.5px #a3a3a3;
+  background: linear-gradient(
+    90deg,
+    rgba(80, 227, 194, 1) 0%,
+    rgba(19, 192, 153, 1) 50%,
+    rgba(35, 139, 170, 1) 100%
+  );
+}
+
+.btn-text {
+  transition: all 1s ease-in-out;
+}
+
+.email-submit-btn:hover .btn-text {
+  transition: all 1s ease-in-out;
+  margin-right: 100px;
+}
+
+.email-submit-btn:hover .right-chevron {
+  display: initial;
+  margin-right: -10px;
+}
+
+.right-chevron {
+  display: none;
 }
 
 .cube4 {
@@ -389,6 +403,9 @@ body {
   z-index: 1;
   position: relative;
   top: 9%;
+}
+
+.cube4animation {
   animation: cube4-slide-right 5s forwards;
 }
 
@@ -402,6 +419,9 @@ body {
   width: 100%;
   position: relative;
   opacity: 0.1;
+}
+
+.vector-animation {
   animation: grey-vector 5s forwards;
 }
 
@@ -424,6 +444,11 @@ body {
 }
 
 .dotted-pattern {
+  width: 10%;
+  height: 10%;
+}
+
+.dots-animation {
   animation: dots 5s forwards;
 }
 
@@ -436,7 +461,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url(./assets/flamingo-image.png);
+  background: url("./assets/flamingo-image.png");
   background-size: cover;
 }
 
@@ -447,6 +472,9 @@ body {
   transform: rotate(45deg);
   z-index: 1;
   margin-top: -8.9%;
+}
+
+.cube5-animation {
   animation: cube5-slide-right 5s forwards;
 }
 
@@ -459,6 +487,9 @@ body {
   align-self: flex-end;
   position: relative;
   top: 14.2%;
+}
+
+.cube6-animation {
   animation: cube6-slide-right 5s forwards;
 }
 
@@ -467,6 +498,7 @@ body {
   z-index: 1;
   display: flex;
   justify-content: space-between;
+  margin-top: 10%;
 }
 
 .chavron-btn {
@@ -510,6 +542,9 @@ body {
   background-color: #fff;
   z-index: 1;
   position: absolute;
+}
+
+.white-box-animation {
   animation: white-box-slide-up 5s forwards;
 }
 
@@ -521,6 +556,9 @@ body {
   right: -10%;
   z-index: -2;
   position: absolute;
+}
+
+.mid-circle-animation {
   animation: big-blue-circle 5s forwards;
 }
 
@@ -549,6 +587,9 @@ body {
   z-index: 1;
   position: relative;
   top: 5%;
+}
+
+.cube7-animation {
   animation: cube7-slide-right 5s forwards;
 }
 
@@ -591,6 +632,9 @@ body {
   transform: rotate(45deg);
   z-index: 1;
   margin-top: 10%;
+}
+
+.cube8-animation {
   animation: cube8-slide-right 5s forwards;
 }
 
@@ -602,6 +646,9 @@ body {
   z-index: 1;
   align-self: end;
   margin-bottom: 13%;
+}
+
+.cube9-animation {
   animation: cube9-slide-right 5s forwards;
 }
 

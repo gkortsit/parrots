@@ -12,6 +12,32 @@ function typewriteHeading() {
   }
 }
 
+let j = 0;
+let botSpeed = 1500;
+let botHeadingText = "together we can give nature the home it needs";
+let botHeading = document.querySelector(".bot-header");
+
+function typewriteBotHeading() {
+  if (j < botHeadingText.length) {
+    botHeading.textContent += botHeadingText.charAt(j);
+    j++;
+    setTimeout(typewriteBotHeading, botSpeed);
+  }
+}
+
+let k = 0;
+let botParagraphText =
+  "Our record of success suggests we are doing many of the right thingsin the right way. But we take nothing for granted. Conservation is rarely straightforward and is becoming ever more demanding. Find out what we're doing and how we're doing it.";
+let botParagraph = document.querySelector(".bot-paragraph");
+
+function typewriteBotParagraph() {
+  if (k < botParagraphText.length) {
+    botParagraph.textContent += botParagraphText.charAt(k);
+    k++;
+    setTimeout(typewriteBotHeading, botSpeed);
+  }
+}
+
 typewriteHeading();
 
 $(window).scroll(function() {
@@ -29,5 +55,9 @@ $(window).scroll(function() {
     $(".cube7").addClass("cube7-animation");
     $(".cube8").addClass("cube8-animation");
     $(".cube9").addClass("cube9-animation");
+    typewriteBotHeading();
+    typewriteBotParagraph();
   }
 });
+
+//NEED TO CHECK TYPEWRITERS
